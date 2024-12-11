@@ -11,9 +11,9 @@
 <script>
 import { onMounted, ref } from 'vue';
 import { useStore } from 'vuex';
-import Filters from '../components/Filters.vue';
+import Filters from '../components/CharacterFilters.vue';
 import CharacterCard from '../components/CharacterCard.vue';
-import Pagination from '../components/Pagination.vue';
+import Pagination from '../components/CharacterPagination.vue';
 
 export default {
   components: { Filters, CharacterCard, Pagination },
@@ -26,7 +26,7 @@ export default {
       characters.value = store.state.characters;
     };
 
-    const applyFilters = (filters) => {
+    const applyFilters = () => {
       // Logic for applying filters based on species or name
     };
 
